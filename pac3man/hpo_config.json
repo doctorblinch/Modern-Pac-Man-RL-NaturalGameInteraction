@@ -1,0 +1,23 @@
+{
+  "experiments_name": "best_hpo_ipa_piwo",
+  "experiments_count": 2,
+  "experiment_repetition_value": 2,
+  "result_folder_name": "experiments",
+  "budget": 5000,
+  "parameters": {
+    "gamma": {
+      "min": 0.99,
+      "max": 1.0,
+      "distribution": "uniformal",
+      "n": 5
+    },
+    "lr": {
+      "min": 0.001,
+      "max": 0.0001,
+      "distribution": "log",
+      "n": 5
+    },
+    "step_size": [50, 100, 150],
+    "baseline": true
+  }
+}
